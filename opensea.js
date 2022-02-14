@@ -35,7 +35,12 @@ async function getLatestEvents(slug, apiKey) {
     options
   );
   response = await response.json();
-  return response;
+  response = response["asset_events"];
+  let permalinks = [];
+  response.forEach((response) => {
+    permalinks.push(response["permalink"]);
+  });
+  return permalinks;
 }
 
 function getTopOffer(response) {

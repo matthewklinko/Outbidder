@@ -14,6 +14,7 @@ const loadConfigs = require("./loadConfigs.js");
 const genratePermalinks = require("./permalinks.js");
 const { getCollectionDetail } = require("./opensea.js");
 const { convertBidTime } = require("./helper.js");
+const { getLatestEvents } = require("./opensea.js");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -126,6 +127,7 @@ ipcMain.on(
     bidCap,
     bidtype
   ) => {
+    slug = collection_url.split("/")[collection_url.length - 1];
     timeUnit = timeUnit.toLowerCase();
     expiration = parseInt(expiration);
     expiration = convertBidTime(expiration, timeUnit);
@@ -133,37 +135,43 @@ ipcMain.on(
     bidCap = parseFloat(bidCap);
 
     configs = await loadConfigs();
+    console.log("load Configs");
     if (!configs.status) {
       console.log("config message\n", configs);
       showMessage(configs.message);
       return 0;
     }
+    let permalinks;
+    let paymentToken = "Weth";
+    let allApiKeys = configs.apiKeys;
+    let apiKeysCycle = cycle(allApiKeys);
+    while (True) {
+      let apiKey = apiKeysCycle.next().value;
+      permalinks = getLatestEvents(slug, apiKey);
+      permalinks = permalinks.map((permalink) => {
+        return { permalink: permalink, status: "ready" };
+      });
+      console.log(permalinks);
+      let _first = permalinks[0].permalink;
+      let [collectionName, collectionImg] = await getCollectionDetail(_first);
+      changeCollection(collectionImg, collectionName, permalinks.length);
 
-    // let permalinks = await genratePermalinks(
-    //   filename,
-    //   collectionUrl,
-    //   tokenRange,
-    //   arrangePermalinks
-    // );
-    let _first = permalinks[0].permalink;
-    let [collectionName, collectionImg] = await getCollectionDetail(_first);
-    changeCollection(collectionImg, collectionName, permalinks.length);
-
-    runbot(
-      configs.accountAddress,
-      configs.mnemonic,
-      paymentToken,
-      permalinks,
-      configs.apiKeys,
-      bidCap,
-      percentageChange,
-      expiration,
-      bidPrice,
-      bidtype,
-      configs.dbSleep,
-      configs.auth,
-      progress,
-      showMessage
-    );
+      runbot(
+        configs.accountAddress,
+        configs.mnemonic,
+        paymentToken,
+        permalinks,
+        configs.apiKeys,
+        bidCap,
+        percentageChange,
+        expiration,
+        bidPrice,
+        bidtype,
+        configs.dbSleep,
+        configs.auth,
+        progress,
+        showMessage
+      );
+    }
   }
 );
