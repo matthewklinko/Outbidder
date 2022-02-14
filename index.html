@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets\css\style.css">
+    <title>App</title>
+</head>
+
+<body>
+    <div class="pop_up">
+        <div class="content_box">
+            <div class="close_box">
+                <i class="far fa-times-circle" id="cross"></i>
+            </div>
+            <div class="error_box">
+
+                <span id="error">
+                    <span id="your_error">
+
+                    </span>
+                    <!-- <i class="far fa-copy" id="copy"></i> -->
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 50px !important;">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Left Side  -->
+                <div class="left_side ">
+                    <div class="start_box mb-3">
+                        <span>
+                            Start
+                        </span>
+                    </div>
+                    <div class="input_box my-5">
+                        <form class="" id="set_form">
+                            <div class="input-group my-3">
+                                <input type="text" name="collection_url" id="text1" class="form-control text1"
+                                    aria-label="Text input with dropdown button" placeholder="Enter Collection Url">
+                                <div class="input-group mb-4 input_tag">
+                                    <input type="text" name="time" id="text3" class="form-control"
+                                        aria-label="Text input with dropdown button" placeholder="Enter Time">
+                                    <button name="time_unit" class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Minutes</button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Minutes</a></li>
+                                        <li><a class="dropdown-item" href="#">Hours</a></li>
+                                        <li><a class="dropdown-item" href="#">Days</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input-group mb-4">
+                                <input type="text" name="percentage_inc" id="text3" class="form-control"
+                                    aria-label="Text input with dropdown button" placeholder="Precentage:">
+                                <button name="bidtype" class="btn btn-outline-secondary" type="button"
+                                     aria-expanded="false">OutBid</button>
+                            </div>
+                            <div class="eth_cap">
+                                <input type="text" name="eth_cap" class="form-control" id="text1"
+                                    aria-describedby="emailHelp" placeholder="Eth Cap:">
+                            </div>
+                            <div class="input_buttons mb-4">
+                                <button type="submit" class="btn btn-primary" id="bty3">Create</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="col-md-12">
+                    <div class="task_box ">
+                        <span>
+                            Task
+                        </span>
+                    </div>
+                </div>
+                <section id="right_bottom_section ">
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="card_board">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="img_section">
+                                            <img class="rotate" src="assets\img\img_2.PNG" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="head_1">
+                                            <span id="collection_name">
+                                                NFT WZRD
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-2">
+                                    <div class="col-md-12">
+                                        <div class="permalink">
+                                            <a id="perma_link">
+
+                                            </a>
+                                            <span id="perma_offer">
+                                                Last made offer
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="card_detail">
+                                            <span class="eth_price" id="no">0001</span>
+                                            <span id="payment_token">Weth Price</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="card_detail">
+                                            <span class="time" id="no">3</span>
+                                            <span class="time_unit">Hours</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="card_detail">
+                                            <span class="percentage_inc" id="no">10%</span>
+                                            <span>Percentage</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="card_detail">
+                                            <span class="bid_cap" id="no">0005</span>
+                                            <span>Bid Cap</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <div class="progress_bar">
+                                            <div class="progress">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                        <p id="complete_percentage">50%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <div class="Progress_info">
+                                                <span><span id="completed_token">Remaining Tokens</span>/<span
+                                                        id="total_token">Total Tokens</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row my-4">
+                                        <div class="col-md-12">
+                                            <div class="btn_grp">
+                                                <button type="button" class="btn btn-primary" id="stop">Pause</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script src="assets\js\script.js"></script>
+
+    <script>
+
+        const { ipcRenderer } = require('electron');
+        const shell = require('electron').shell;
+        const buttonCreated = document.getElementById('formFile');
+
+        // buttonCreated.addEventListener('click', function (event) {
+        //     event.preventDefault()
+        //     ipcRenderer.send('open-file-dialog-for-file')
+        // });
+
+        // ipcRenderer.on('selected-file', function (event, path) {
+        //     document.querySelector('*[name="output_path"]').value = path
+        //     document.querySelector("#file_check").style.display = 'block'
+        // });
+        function showMessage(text) {
+            const popup = document.querySelector('.pop_up');
+            message = document.querySelector("#your_error")
+            message.innerHTML = text
+            popup.style.display = 'block'
+
+        }
+
+        run_btn = document.querySelector('#bty3')
+        run_btn.onclick = e => {
+            e.preventDefault()
+
+
+            console.log("Running")
+            collection_url = document.querySelector('*[name="collection_url"]').value
+            time = document.querySelector('*[name="time"]').value
+            time_unit = document.querySelector('*[name="time_unit"]').innerHTML
+            percentage_inc = document.querySelector('*[name="percentage_inc"]').value
+            bidtype = document.querySelector('*[name="bidtype"]').innerHTML.toLowerCase()
+            eth_cap = document.querySelector('*[name="eth_cap"]').value
+
+            document.querySelector('.progress-bar').style.width = "0%"
+            document.querySelector('#complete_percentage').innerHTML = "0%"
+            document.querySelector('#completed_token').innerHTML = "0"
+            document.querySelector('#total_token').innerHTML = "0"
+
+            document.querySelector('.eth_price').innerHTML = price
+            document.querySelector('.time').innerHTML = time
+            document.querySelector('.bid_cap').innerHTML = eth_cap == '' ? 'N/A' : eth_cap
+            document.querySelector('.percentage_inc').innerHTML = percentage_inc == '' ? 'N/A' : percentage_inc
+            document.querySelector('.time_unit').innerHTML = time_unit
+            document.querySelector("#payment_token").innerHTML = payment_token + " Price"
+
+            percentage_inc == "" ? percentage_inc = NaN : percentage_inc;
+            eth_cap == "" ? eth_cap = NaN : eth_cap;
+
+            ipcRenderer.send(
+                "runBot", collection_url, time, time_unit,
+                percentage_inc, eth_cap, bidtype,
+                )
+        }
+
+
+        function progress(last_offer, completed_token, total_token) {
+            console.log(last_offer, completed_token, total_token)
+            complete_percentage = parseInt((completed_token / total_token) * 100).toString() + "%"
+            token = last_offer.split('/')
+            token = token.slice(token.length - 2).join("/")
+
+            document.querySelector('.progress-bar').style.width = complete_percentage
+            document.querySelector('#perma_link').innerHTML = token
+            document.querySelector('#complete_percentage').innerHTML = complete_percentage
+            document.querySelector('#completed_token').innerHTML = completed_token
+            document.querySelector('#total_token').innerHTML = total_token
+            document.querySelector('#perma_link').href = last_offer
+
+        }
+
+        function changeCollection(img, name, total_token) {
+            document.querySelector('.img_section img').src = img
+            document.querySelector("#collection_name").innerHTML = name
+            document.querySelector('#total_token').innerHTML = total_token
+        }
+
+        permalink = document.querySelector('#perma_link')
+        permalink.onclick = e => {
+            e.preventDefault()
+            shell.openExternal(e.target.href)
+        }
+
+        stop_btn = document.querySelector("#stop")
+        stop_btn.onclick = (e) => {
+            e.target.innerHTML == "Pause" ? e.target.innerHTML = "Resume" : e.target.innerHTML = "Pause";
+            ipcRenderer.send("pause")
+        }
+
+    </script>
+
+</body>
+
+</html>

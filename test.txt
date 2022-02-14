@@ -1,0 +1,81 @@
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/22650',
+  bidAmount: '11773800000000000000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/24830',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/13202',
+  bidAmount: '17945549999999997000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/971',
+  bidAmount: '15520999999999999000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/4224',
+  bidAmount: '16616249999999997000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7182',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/9747',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/18592',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/8642',
+  bidAmount: '11773800000000000000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/23680',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/25992',
+  bidAmount: '11773800000000000000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/1964',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/18632',
+  bidAmount: '11773800000000000000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/17142',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/15054',
+  bidAmount: '17185950000000000000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3496',
+  bidAmount: '11773800000000000000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/9678',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7181',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/23356',
+  bidAmount: '16236449999999998000'
+}
+{
+  permalink: 'https://opensea.io/assets/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3068',
+  bidAmount: '11773800000000000000'
+}
+[
